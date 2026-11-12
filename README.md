@@ -1,23 +1,11 @@
 # homebrew-sparkedit
 
-**SparkEdit**, a text editor for the Mac whose tabs are miniatures of their pages, with the
-`spk` command for the shell.
+**SparkEdit has moved to [siriokds/homebrew-tap](https://github.com/siriokds/homebrew-tap).**
 
 ```sh
-brew install --cask siriokds/sparkedit/sparkedit
-spk notes.txt
+brew tap siriokds/tap
+brew install --cask sparkedit
 ```
 
-`spk file` opens the file in SparkEdit, starting it if it is not running (as CotEditor's `cot`);
-a file that does not exist yet is made, empty. `spk -h` tells the rest.
-
-The cask installs the app already built: macOS 14 or later on Apple silicon.
-
-To update (`brew update` first, so that Homebrew reads the new version):
-
-```sh
-brew update && brew upgrade --cask sparkedit
-```
-
-SparkEdit is not notarized by Apple: the first time, macOS stops it. Open System Settings ›
-Privacy & Security and click **Open Anyway**; from then on it opens as any app.
+If SparkEdit was installed from here: `brew uninstall --cask sparkedit`, then the two lines
+above (SparkEdit's notes and settings are not touched).

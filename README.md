@@ -9,7 +9,7 @@ spk notes.txt
 ```
 
 `spk file` opens the file in SparkEdit, starting it if it is not running (as CotEditor's `cot`);
-`spk -n file` creates the file first if it does not exist; `spk -h` tells the rest.
+a file that does not exist yet is made, empty. `spk -h` tells the rest.
 
 The cask installs the app already built: macOS 14 or later on Apple silicon.
 
